@@ -35,3 +35,5 @@ else
     chmod +rwx "${HOME}/.ssh/id_rsa"
 fi
 
+echo "Enter the following to make SSH key work"
+echo "$ git remote set-url origin git@github.com:imbauer/bash-scripts.git"
