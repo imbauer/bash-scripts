@@ -30,7 +30,7 @@ else
     echo "Storing ssh keys in ${HOME}/.ssh"
     echo -e "\n" | ssh-keygen -t rsa -b 4096 -C "${EMAIL}" -f $HOME/.ssh/id_rsa
 
-    echo "Set permissions to both keys for accessibility"
+    echo "Set permissions to keys for accessibility"
     chmod +rwx "${HOME}/.ssh/id_rsa.pub"
     chmod +rwx "${HOME}/.ssh/id_rsa"
 fi
